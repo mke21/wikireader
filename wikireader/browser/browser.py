@@ -22,7 +22,7 @@ class MainWindow(QMainWindow):
        self.browser.setHtml(value)
 
 
-def runBrowser(html):
+def run_browser(html):
     """
     Starts browser and accepts html to be displayed
     """

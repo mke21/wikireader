@@ -1,1 +1,1 @@
-from .browser import runBrowser
+from .browser import run_browser
