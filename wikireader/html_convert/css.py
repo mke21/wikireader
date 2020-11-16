@@ -9,7 +9,7 @@ body {
   background-color: #111;
   color: #818181;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16;
+  font-size: large;
 }
 
 .content {
