@@ -30,9 +30,21 @@ keyword or query. The dmenu will disappear and reappear with suggestions to arti
 chosing one, the article will be loaded and shown in a simplified html form.
 
 ## Config
-Configuration is not implemented yet. However the appearance of the text can be modified by
-css. This file is created after the first run of the program at `~/.config/wikireader/layout.css`.
-If you mess it up, you can just delete the file and it will be recreated after rerunning WikiReader.
+Configuration is still in it's early stages. The first implementation is in
+version 0.0.4. At the moment you can only set the theme.
+The config folder is in `~/.config/wikireader/`. There will be a `config.json`.
+If it is not there, run the wikireader command once. The program will create
+the folder and the default config files. There will be a css folder as well
+with availabel themes, at the moment only a dark- and a light theme. Be free to
+create your own theme, but beware that you give it a different name.
+In the config.json you can set the theme, by setting the css filename without
+the `.css` extentsion:
+``` json
+{
+    "theme": "light"
+}
+```
+The default is dark as I prefer that.
 
 ## Licence
 The package is released under MIT license.
