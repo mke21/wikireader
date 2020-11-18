@@ -1,7 +1,7 @@
 """
 Runs a window which can display html like a browser
 """
-
+from PyQt5 import QtCore
 from PyQt5.QtWidgets import QMainWindow, QApplication
 from PyQt5.QtWebEngineWidgets import QWebEngineView
 
@@ -13,7 +13,7 @@ class MainWindow(QMainWindow):
 
         self.browser = QWebEngineView()
         self.browser.setHtml("<h1>Test</h1>")
-
+        self.browser.setContextMenuPolicy(QtCore.Qt.NoContextMenu)
         self.setCentralWidget(self.browser)
 
         self.show()
