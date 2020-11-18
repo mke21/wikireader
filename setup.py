@@ -14,9 +14,7 @@ setup(
     long_description_content_type='text/markdown',
     author="Marcel Kerkveld",
     url="https://github.com/mke21/wikireader",
-    data_files=[
-        (path.join(environ["HOME"], ".config", "wikireader"), ['config/config.json']),
-    ],
+    include_package_data=True,
     classifiers=[
         'Development Status :: 3 - Alpha',
         'License :: OSI Approved :: MIT License',

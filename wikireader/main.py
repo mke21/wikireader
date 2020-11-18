@@ -10,7 +10,7 @@ def display(keyword):
     Gets article and shows it in html viewer
     """
     content = get_article(keyword)
-    content_html = generate_html(content)
+    content_html = generate_html(content )
     run_browser(content_html)
 
 
