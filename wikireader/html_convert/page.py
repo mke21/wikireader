@@ -11,5 +11,6 @@ def generate_html(article):
     """
     content = ArticleContent(article.content)
     html =  page_layout(article.title, content, get_css())
+    open("/home/marcel/test.html", "w").write(html)
     return html
 

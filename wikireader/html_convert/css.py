@@ -2,61 +2,84 @@ from pathlib import Path
 import os
 CSS = """
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-  background-color: #111;
-  color: #818181;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: large;
+	background-color: #111;
+	color: #818181;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+}
+
+body, html {
+	height: 100%;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+::-webkit-scrollbar {
+  width: 0.3em; 
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(150,150,150,0.4);
+  outline: 1px solid red;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 4px rgba(0,0,0,0.2);
 }
 
 .content {
-    max-width: 80em;
-    margin: auto;
+	height: 100%;
+	max-width: 80em;
+	margin: auto;
+	font-size: large;
+	display: grid;
+	grid-template-columns: 1fr 3fr;
 }
 
 /* The sidebar menu */
 .sidenav {
-  width: 300px; /* Set the width of the sidebar */
-  height: 100%;
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: #222; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  overflow-y: auto;
+	height: 100%;
+	grid-column: 1;
+	background-color: #222; /* Black */
+	overflow-x: hidden; /* Disable horizontal scroll */
+	overflow-y: auto;
 }
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  color: #818181;
-  display: block;
+	padding: 6px 8px 6px 16px;
+	text-decoration: none;
+	color: #818181;
+	display: block;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #f1f1f1;
+	color: #f1f1f1;
 }
 
 /* Style page content */
 .article {
-  margin-left: 160px; /* Same as the width of the sidebar */
-  padding: 0px 10px;
+	height: 100%;
+	grid-column: 2;
+	overflow-y: auto;
+	padding: 0px 10px;
+	scroll-behavior: smooth;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-p {
-    line-height: 1.6;
-}
+	/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+	@media screen and (max-height: 450px) {
+		.sidenav {padding-top: 15px;}
+		.sidenav a {font-size: 18px;}
+	}
+	p {
+		line-height: 1.6;
+	}
 
 """
 
