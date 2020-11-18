@@ -1,18 +1,22 @@
 from setuptools import setup, find_packages
-from os import path
+from os import path, environ
+
 this_directory = path.abspath(path.dirname(__file__))
 with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
     name="wikireader",
-    version="0.0.3",
+    version="0.0.4",
     packages=find_packages(),
     description="Read wikipedia articles distraction free",
     long_description=long_description,
     long_description_content_type='text/markdown',
     author="Marcel Kerkveld",
     url="https://github.com/mke21/wikireader",
+    data_files=[
+        (path.join(environ["HOME"], ".config", "wikireader"), ['config/config.json']),
+    ],
     classifiers=[
         'Development Status :: 3 - Alpha',
         'License :: OSI Approved :: MIT License',

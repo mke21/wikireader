@@ -1,0 +1,53 @@
+Using pip 20.2.4 from /home/marcel/Documents/programming/wikireader/venv/lib/python3.8/site-packages/pip (python 3.8)
+Non-user install because user site-packages disabled
+Created temporary directory: /tmp/pip-ephem-wheel-cache-ael4djx3
+Created temporary directory: /tmp/pip-req-tracker-fjo0fzbh
+Initialized build tracking at /tmp/pip-req-tracker-fjo0fzbh
+Created build tracker: /tmp/pip-req-tracker-fjo0fzbh
+Entered build tracker: /tmp/pip-req-tracker-fjo0fzbh
+Created temporary directory: /tmp/pip-install-ts3sj1pk
+_manylinux not found in: /home/marcel/Documents/programming/wikireader/venv/bin:/usr/lib/python38.zip:/usr/lib/python3.8:/usr/lib/python3.8/lib-dynload:/home/marcel/Documents/programming/wikireader/venv/lib/python3.8/site-packages
+_manylinux not found in: /home/marcel/Documents/programming/wikireader/venv/bin:/usr/lib/python38.zip:/usr/lib/python3.8:/usr/lib/python3.8/lib-dynload:/home/marcel/Documents/programming/wikireader/venv/lib/python3.8/site-packages
+Processing /home/marcel/Documents/programming/wikireader
+  Created temporary directory: /tmp/pip-req-build-p_ifu9v4
+  Added file:///home/marcel/Documents/programming/wikireader to build tracker '/tmp/pip-req-tracker-fjo0fzbh'
+    Running setup.py (path:/tmp/pip-req-build-p_ifu9v4/setup.py) egg_info for package from file:///home/marcel/Documents/programming/wikireader
+    Created temporary directory: /tmp/pip-pip-egg-info-n0up6tgw
+  Source in /tmp/pip-req-build-p_ifu9v4 has version 0.0.3, which satisfies requirement wikireader==0.0.3 from file:///home/marcel/Documents/programming/wikireader
+  Removed wikireader==0.0.3 from file:///home/marcel/Documents/programming/wikireader from build tracker '/tmp/pip-req-tracker-fjo0fzbh'
+Requirement already satisfied: PyQt5>=5.15.1 in ./venv/lib/python3.8/site-packages (from wikireader==0.0.3) (5.15.1)
+Requirement already satisfied: PyQtWebEngine>=5.15.1 in ./venv/lib/python3.8/site-packages (from wikireader==0.0.3) (5.15.1)
+Requirement already satisfied: wikipedia>=1.4.0 in ./venv/lib/python3.8/site-packages (from wikireader==0.0.3) (1.4.0)
+Requirement already satisfied: PyQt5-sip<13,>=12.8 in ./venv/lib/python3.8/site-packages (from PyQt5>=5.15.1->wikireader==0.0.3) (12.8.1)
+Requirement already satisfied: beautifulsoup4 in ./venv/lib/python3.8/site-packages (from wikipedia>=1.4.0->wikireader==0.0.3) (4.9.3)
+Requirement already satisfied: requests<3.0.0,>=2.0.0 in ./venv/lib/python3.8/site-packages (from wikipedia>=1.4.0->wikireader==0.0.3) (2.24.0)
+Requirement already satisfied: soupsieve>1.2; python_version >= "3.0" in ./venv/lib/python3.8/site-packages (from beautifulsoup4->wikipedia>=1.4.0->wikireader==0.0.3) (2.0.1)
+Requirement already satisfied: idna<3,>=2.5 in ./venv/lib/python3.8/site-packages (from requests<3.0.0,>=2.0.0->wikipedia>=1.4.0->wikireader==0.0.3) (2.10)
+Requirement already satisfied: chardet<4,>=3.0.2 in ./venv/lib/python3.8/site-packages (from requests<3.0.0,>=2.0.0->wikipedia>=1.4.0->wikireader==0.0.3) (3.0.4)
+Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in ./venv/lib/python3.8/site-packages (from requests<3.0.0,>=2.0.0->wikipedia>=1.4.0->wikireader==0.0.3) (1.25.11)
+Requirement already satisfied: certifi>=2017.4.17 in ./venv/lib/python3.8/site-packages (from requests<3.0.0,>=2.0.0->wikipedia>=1.4.0->wikireader==0.0.3) (2020.11.8)
+Building wheels for collected packages: wikireader
+  Created temporary directory: /tmp/pip-wheel-at98dule
+  Building wheel for wikireader (setup.py): started
+  Destination directory: /tmp/pip-wheel-at98dule
+  Building wheel for wikireader (setup.py): finished with status 'done'
+  Created wheel for wikireader: filename=wikireader-0.0.3-py3-none-any.whl size=8964 sha256=885a1cc5fe72f0d167100e9e05695e1b2b7237534eb35ea16129d13205e91757
+  Stored in directory: /tmp/pip-ephem-wheel-cache-ael4djx3/wheels/9a/d2/b4/1f55483f0ba31eec7ab4ab6438e58bb6255b2b19c8d4b107b8
+Successfully built wikireader
+Installing collected packages: wikireader
+  Attempting uninstall: wikireader
+    Found existing installation: wikireader 0.0.3
+    Uninstalling wikireader-0.0.3:
+      Created temporary directory: /tmp/pip-uninstall-e2l5cwju
+      Removing file or directory /home/marcel/Documents/programming/wikireader/venv/bin/wikireader
+      Created temporary directory: /home/marcel/Documents/programming/wikireader/venv/lib/python3.8/site-packages/~mp
+      Removing file or directory /home/marcel/Documents/programming/wikireader/venv/lib/python3.8/site-packages/tmp/
+      Created temporary directory: /home/marcel/Documents/programming/wikireader/venv/lib/python3.8/site-packages/~ikireader-0.0.3.dist-info
+      Removing file or directory /home/marcel/Documents/programming/wikireader/venv/lib/python3.8/site-packages/wikireader-0.0.3.dist-info/
+      Created temporary directory: /home/marcel/Documents/programming/wikireader/venv/lib/python3.8/site-packages/~ikireader
+      Removing file or directory /home/marcel/Documents/programming/wikireader/venv/lib/python3.8/site-packages/wikireader/
+      Successfully uninstalled wikireader-0.0.3
+
+  changing mode of /home/marcel/Documents/programming/wikireader/venv/bin/wikireader to 755
+Successfully installed wikireader-0.0.3
+Removed build tracker: '/tmp/pip-req-tracker-fjo0fzbh'
