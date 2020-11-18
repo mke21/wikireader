@@ -7,7 +7,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name="wikireader",
-    version="0.0.4",
+    version="0.0.5",
     packages=find_packages(),
     description="Read wikipedia articles distraction free",
     long_description=long_description,
